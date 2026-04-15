@@ -18,6 +18,8 @@ git remote add origin https://github_adress
 git push origin master
 git pull origin master
 
+git checkout master
+
 ```
 
 ## Python Foundation:
