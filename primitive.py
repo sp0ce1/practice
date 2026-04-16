@@ -31,5 +31,21 @@ print(f"the result (4): {result}")
 print(course)
 
 
+print("======== Boolean ===========")
+# functions: type() input() bool() int() str()
+y = input("give your value for y:")
+print("y:", y)
+
+result = y.isnumeric()
+print(f"the input values is numeric: {result}")
+
+# TRUTHY vs FALSY values
+# TRUTHY: True 100 -100 "MIT"
+# FALSY: False 0 "" none
 
 
+test_falsy = "" or False or 0 or None
+print("The test_falsy:", bool(test_falsy))
+
+test_truthy = "MIT"
+print("The test_truthy:", bool(test_truthy))
