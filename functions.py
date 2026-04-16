@@ -6,24 +6,38 @@ FUNCTIONS:
 (4) Scope
 '''
 
-print("=========== DEFINE (paramter) vs CALL (argument) ==============") 
-# build in functions: >  print() type()
+# print("=========== DEFINE (paramter) vs CALL (argument) ==============") 
+# # build in functions: >  print() type()
 # function - reusable block of code
 # instead of block {} in JAVA, Python uses : indentation.
 
 
 # DEFINE - build
-def greet(a):
-    print(f"How do you do? {a}") 
+# def greet(a):
+#     print(f"How do you do? {a}") 
 
 
-def greeting(b):
-    print("greeting is executed")
-    return f"Hi {b}"
+# def greeting(b):
+#     print("greeting is executed")
+#     return f"Hi {b}"
 
-# CALL - execute 
-result1 = greet("Martin")
-print("result:", result1)
+# # CALL - execute 
+# result1 = greet("Martin")
+# print("result:", result1)
 
-result2 = greeting("Justin")
-print("result2:", result2)
+# result2 = greeting("Justin")
+# print("result2:", result2)
+
+
+print("=========== Keyword & Default Arguments ==============") 
+# DEFINE 
+def give_greet(name, age=22): 
+    print("give_greet is executed") 
+    return f"Hi {name}, you are {age} years old"
+
+#CALL
+result3 = give_greet(name="Justin",age=28)
+print("result3:", result3)
+
+result4 = give_greet("John")
+print("result4:", result4)
