@@ -15,7 +15,7 @@ function countDigits(data) {
 }
 
 
-console.log(countDigits());
+console.log(countDigits("ad2a54y79wet0sfgb9"));
 
 // ====================================================================
 /* A-TASK:
