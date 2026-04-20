@@ -66,7 +66,7 @@ car_dict = dict(name="Toyota", year=2026, electric=True)
 # General Error handling
 try:
     print("passed here")
-    a = car_dict.speed
+    # a = car_dict.speed
     result = car_dict["origin"]
 except Exception as err:
     print("General Error", err)
