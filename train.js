@@ -1,5 +1,28 @@
 
 /*
+C-TASK (NodeJS)
+
+Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string 
+bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+*/
+
+// Masalani yechimi:
+
+function checkContent(birinchi, ikkinchi) {
+    let birinchiSorted = birinchi.split("").sort().join("");
+    let ikkinchiSorted = ikkinchi.split("").sort().join("");
+
+    return birinchiSorted === ikkinchiSorted;
+}
+
+console.log(checkContent("mitgroup", "gmtiprou"));
+
+
+
+
+
+/*
 B-TASK (NodeJS)
 
 Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
@@ -8,14 +31,14 @@ MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
 
 // Masalani yechimi:
 
-function countDigits(data) {
-    return data.split("")
-        .filter(filterred => filterred >= "0" && filterred <= "9")
-        .length;
-}
+// function countDigits(data) {
+//     return data.split("")
+//         .filter(filterred => filterred >= "0" && filterred <= "9")
+//         .length;
+// }
 
 
-console.log(countDigits("ad2a54y79wet0sfgb9"));
+// console.log(countDigits("ad2a54y79wet0sfgb9"));
 
 // ====================================================================
 /* A-TASK:
