@@ -8,7 +8,7 @@ print("======= INHERITENCE ===========")
 # PARENT > CHILD [Parent class provides only public and protected properties to child classes!]
 
 
-class Animal:  # Parant class
+class Animal(object):  # Parant class
     # state
     description = "This class is parant for animals"
 
@@ -32,6 +32,9 @@ class Dog(Animal):
         super().__init__(voice)
 
      # method
+    def make_voice(self):
+        print(f"{self.name} says: {self.sound} ")
+
     def introduce(self):
         print(f"the {self.name} says: {self.sound}-{self.sound}")
 
@@ -93,3 +96,25 @@ print(Dog.description)
 print(dog.voice, fish.voice)
 print("dog.status:", dog._status)
 print("cat.status:", cat._status)
+
+
+print("======= Polymorphism ===========")
+
+dog.make_voice()
+fish.make_voice()
+
+print("=========")
+# fish > Fish > Animal > Object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+
+result = a and b and c and d
+print(f"the result: {result}")
+
+# fish > Animal > object
+data1 = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object)
+
+print("data:", data1, data2)
