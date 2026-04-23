@@ -32,3 +32,9 @@ git checkout master
 - Class deep dive
 - Operations and Conditions
 - Loops
+- Tuple
+- List
+- Array
+- Comprehension
+- Debugging
+
