@@ -53,15 +53,32 @@ range_obj = range(5)
 #     print(f"the numb equal: {numb}")
 
 
-print("=========")
+# print("=========")
 
-count = 0
-while True:
-    count += 1
-    x = int(input("find number"))
+# count = 0
+# while True:
+#     count += 1
+#     x = int(input("find number"))
 
-    if x == 41:
-        print(f"you found the number in {count} step")
-        break
-    else:
-        print("wrong, please find again")
+#     if x == 41:
+#         print(f"you found the number in {count} step")
+#         break
+#     else:
+#         print("wrong, please find again")
+
+
+# print("========================================================")
+
+# secret = 7
+# guess = 0
+# count = 0
+
+# while guess != secret:
+#     count += 1
+#     guess = int(input("raqam kirit: "))
+#     if guess < secret:
+#         print("Kattaroq")
+#     elif guess > secret:
+#         print("Kichikroq")
+#     else:
+#         print(f"Topildi. {count}:chi urunishda")
