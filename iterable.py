@@ -1,5 +1,5 @@
 print("====== iterable objects & Range =======")
-# Iterable objects > string dict tuple list range map filter
+# Iterable objects > string dict tuple zip list range map filter
 
 # text = "MIT"
 # for letter in text:
