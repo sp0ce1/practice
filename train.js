@@ -1,22 +1,45 @@
 
+
+
+/* D-TASK (NodeJS)
+
+Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta 
+qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini. */
+
+// Masalani yechimi:
+
+
+function getHighestIndex(raqam) {
+    let katta = Math.max(...raqam);
+    const index = raqam.indexOf(katta)
+    return index
+}
+
+const result = getHighestIndex([5, 21, 12, 21, 8])
+console.log(result)
+
+
+
+
 /*
 C-TASK (NodeJS)
 
-Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string 
+Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string
 bir hil harflardan iborat bolsa true aks holda false qaytarsin
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 */
 
 // Masalani yechimi:
 
-function checkContent(birinchi, ikkinchi) {
-    let birinchiSorted = birinchi.split("").sort().join("");
-    let ikkinchiSorted = ikkinchi.split("").sort().join("");
+// function checkContent(birinchi, ikkinchi) {
+//     let birinchiSorted = birinchi.split("").sort().join("");
+//     let ikkinchiSorted = ikkinchi.split("").sort().join("");
 
-    return birinchiSorted === ikkinchiSorted;
-}
+//     return birinchiSorted === ikkinchiSorted;
+// }
 
-console.log(checkContent("mitgroup", "gmtiprou"));
+// console.log(checkContent("mitgroup", "gmtiprou"));
 
 
 
