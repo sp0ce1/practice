@@ -33,7 +33,7 @@ d = fruits[::-1]
 # print("c:", c)
 # print("d:", d)
 
-print("======= list methods ========= ")
+# print("======= list methods ========= ")
 # methods > append() insert() pop() remove() clear() sort() index()
 
 letters = ["a", "d", "b"]
@@ -51,40 +51,64 @@ result1 = letters.pop(size)  # pop behind
 result2 = letters.pop(0)  # pop based on index
 # print(f"the pop result2: {result2} and letters: {letters}")
 
-# print("=========")
-animals = ["dog", "cat", "capybara", "lion"]
-print("animals:", animals)
+# # print("=========")
+# animals = ["dog", "cat", "capybara", "lion"]
+# print("animals:", animals)
 
-animals.remove("lion")
-print("animals remove:", animals)
+# animals.remove("lion")
+# print("animals remove:", animals)
 
-del animals[0:1]
-print("animals delete:", animals)
+# del animals[0:1]
+# print("animals delete:", animals)
 
-exist = animals.index("cat")
-print("cat exist:", exist)
+# exist = animals.index("cat")
+# print("cat exist:", exist)
 
-animals.clear()
-print("animals clear:", animals)
+# animals.clear()
+# print("animals clear:", animals)
 
 # exist2 = animals.index("cat")
 # print("cat exist2:", exist2)
 
-if "cat" in animals:
-    print("index of cat:", animals.index("cat"))
-else:
-    print("cat does not exist")
+# if "cat" in animals:
+#     print("index of cat:", animals.index("cat"))
+# else:
+#     print("cat does not exist")
 
 
-print("==========")
+# print("==========")
 numbers = [1, 20, 12, 8, 57]
 
 numbers.sort()
-print("sort default:", numbers)
+# print("sort default:", numbers)
 numbers.sort(reverse=True)
-print("sort reverse:", numbers)
+# print("sort reverse:", numbers)
 
 # immutable sorted() function and index() method
 numbs = [2, 20, 12, 100]
 new_numbs = sorted(numbs)
-print(f"the sorted numbs: {numbs} and new_numbs: {new_numbs}")
+# print(f"the sorted numbs: {numbs} and new_numbs: {new_numbs}")
+
+
+print("======= Lambda function ========= ")
+# lambda is a small anonymous function
+def calculate(x, y): return x * y
+
+
+result = calculate(3, 5)
+print("result:", result)
+
+people = [
+    ("Robert", 20),
+    ("Steve", 19),
+    ("Joseph", 25),
+    ("Micheal", 30),
+    ("Ali", 40)
+]
+
+people.sort()
+print("people(1)", people)
+
+# sort by age via lambda
+people.sort(key=lambda person: person[1])
+print("people2", people)
