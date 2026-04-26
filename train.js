@@ -1,23 +1,41 @@
 
+/*
+E-TASK (NodeJS)
+
+Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh"
+*/
+
+// Masalani yechimi:
+// node train.js
+
+function getReverse(teskari) {
+    return teskari.split("").reverse().join("");
+};
+console.log(getReverse("hello"));
+
+
+
+
 
 
 /* D-TASK (NodeJS)
 
-Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta 
+Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta
 qiymatiga tegishli birinchi indexni qaytarsin.
 MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini. */
 
 // Masalani yechimi:
 
 
-function getHighestIndex(raqam) {
-    let katta = Math.max(...raqam);
-    const index = raqam.indexOf(katta)
-    return index
-}
+// function getHighestIndex(raqam) {
+//     let katta = Math.max(...raqam);
+//     const index = raqam.indexOf(katta)
+//     return index
+// }
 
-const result = getHighestIndex([5, 21, 12, 21, 8])
-console.log(result)
+// const result = getHighestIndex([5, 21, 12, 21, 8])
+// console.log(result)
 
 
 
