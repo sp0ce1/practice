@@ -2,7 +2,7 @@
 (1) Working with list
 (2) List methods
 (3) Lambo function
-(4)Enumarate, map, filter
+(4)Enumerate, map, filter
 '''
 
 # print("======= Working with list ========= ")
@@ -90,13 +90,13 @@ new_numbs = sorted(numbs)
 # print(f"the sorted numbs: {numbs} and new_numbs: {new_numbs}")
 
 
-print("======= Lambda function ========= ")
+# print("======= Lambda function ========= ")
 # lambda is a small anonymous function
 def calculate(x, y): return x * y
 
 
 result = calculate(3, 5)
-print("result:", result)
+# print("result:", result)
 
 people = [
     ("Robert", 20),
@@ -107,8 +107,55 @@ people = [
 ]
 
 people.sort()
-print("people(1)", people)
+# print("people(1)", people)
 
 # sort by age via lambda
 people.sort(key=lambda person: person[1])
-print("people2", people)
+# print("people2", people)
+
+
+# print("======= enumerate, map, filter ========= ")
+# enumerate for index & value
+
+# animals = ["dog", "cat", "fish"]
+# for element in enumerate(animals):
+#     print("element:", element)
+
+# print("=========")
+# for (index, value) in enumerate(animals):
+#     print(f"the index: {index} and the value {value}")
+
+# similar in dictionary
+car_obj = dict(brand="Ferrari", year=2025)
+result = car_obj.items()
+# for (key, value) in result:
+# print(f"the key: {key} and the value: {value}")
+
+print("==========")
+# map()
+cars = [
+    ("Ferrari", 78),
+    ("Toyota", 87),
+    ("Audi", 116),
+    ("BMW", 109),
+    ("Pagani", 33)
+]
+
+# new_cars = []
+# for car in cars:
+#     new_cars.append(car[0])
+# print("new_car(1):", new_cars)
+
+# result_map = map(lambda car: car[0], cars)
+# new_cars = list(result_map)
+# print("new_car(2)", new_cars)
+
+# natija = list(map(lambda car: car[0], cars))
+# print(natija)
+
+
+print("==========")
+# filter()
+
+result_filter = filter(lambda car: car[1] > 80, cars)
+print(list(result_filter))
