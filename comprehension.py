@@ -1,6 +1,6 @@
 ''' Comprehension
 (1) What is comprehension
-(2) Set and dictionary comp
+(2) Set and dictionary comprehension
 '''
 print("==== What is comprehension =====")
 # Comprehension acts like spread operator!
@@ -21,7 +21,7 @@ print(id(numbers), id((list)))
 
 
 print("========")
-people = [("Robert", 20), ("Steve", 19), ("Joseph", 25)]
+people = [("Robert", 20), ("Steve", 19), ("Tony", 25)]
 list_people = [person[0] for person in people]  # B version
 print("list_people:", list_people)
 
@@ -35,3 +35,19 @@ cars = [
 ]
 list_cars = [car[0] for car in cars if car[1] > 80]
 print("list_cars:", list_cars)
+
+
+print("==== Set and dictionary comprehension =====")
+
+numbs = [1, 5, 4, 20, 4, 5, 1, 4]
+set_numbs = {*numbs}
+print("set_numbs:", set_numbs)
+
+dict_people = {person[0]: person[1] for person in people}
+print("dict_people:", dict_people)
+
+dict_people2 = {person[0]: person[1] for person in people if person[1] >= 20}
+print("dict_people:", dict_people2)
+
+
+# (<expression> for item in iterable) generic
