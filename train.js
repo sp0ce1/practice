@@ -1,4 +1,34 @@
 
+/* F-TASK (NodeJS)
+
+Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa
+true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi 
+*/
+
+// Masalani yechimi:
+
+function getReverse(task) {
+    const misol = task.split("");
+
+    for (let i = 0; i < misol.length; i++) {
+        if (misol.filter(harf => harf === misol[i]).length > 1) {
+            return true;
+        }
+    }
+    return false
+}
+const result = getReverse("hello")
+console.log(result)
+
+
+
+
+
+
+
+
+
 /*
 E-TASK (NodeJS)
 
@@ -9,10 +39,10 @@ MASALAN: getReverse("hello") return qilsin "olleh"
 // Masalani yechimi:
 // node train.js
 
-function getReverse(teskari) {
-    return teskari.split("").reverse().join("");
-};
-console.log(getReverse("hello"));
+// function getReverse(teskari) {
+//     return teskari.split("").reverse().join("");
+// };
+// console.log(getReverse("hello"));
 
 
 
