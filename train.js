@@ -1,25 +1,65 @@
+/*H-TASK (NodeJS)
+
+shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib, faqat positive qiymatlarni
+ olib string holatda return qilsin
+MASALAN: getPositive([1, -4, 2]) return qiladi "12"
+*/
+
+// Masalani yechimi:
+// node train.js
+function getPositive(a) {
+    let natija = "";
+
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] > 0) {
+            natija += String(a[i]);
+        }
+
+    }
+    return natija
+}
+const result = getPositive([1, -4, 2]);
+console.log(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* F-TASK (NodeJS)
 
 Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa
 true, qatnashmasa false qaytarishi kerak.
-MASALAN: getReverse("hello") return true return qiladi 
+MASALAN: getReverse("hello") return true return qiladi
 */
 
 // Masalani yechimi:
 
-function getReverse(task) {
-    const misol = task.split("");
+// function getReverse(task) {
+//     const misol = task.split("");
 
-    for (let i = 0; i < misol.length; i++) {
-        if (misol.filter(harf => harf === misol[i]).length > 1) {
-            return true;
-        }
-    }
-    return false
-}
-const result = getReverse("hello")
-console.log(result)
+//     for (let i = 0; i < misol.length; i++) {
+//         if (misol.filter(harf => harf === misol[i]).length > 1) {
+//             return true;
+//         }
+//     }
+//     return false
+// }
+// const result = getReverse("hello")
+// console.log(result)
 
 
 
