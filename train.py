@@ -1,4 +1,22 @@
 
+'''
+K-TASK (PYTHON)
+
+Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
+MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
+'''
+
+# Masalaga Yechim:
+
+
+def find_longest(data):
+    list = data.split()
+    return max(list, key=lambda x: len(x))
+
+
+print(find_longest("I come from Uzbekistan"))
+
+
 # I-TASK (PYTHON)
 
 # Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
@@ -7,12 +25,12 @@
 # Masalaga Yechim:
 
 
-def get_digits(data):
-    result = [x for x in data if x.isdigit()]
-    return "".join(result)
+# def get_digits(data):
+#     result = [x for x in data if x.isdigit()]
+#     return "".join(result)
 
 
-print(get_digits("m14i1t"))
+# print(get_digits("m14i1t"))
 
 
 # G-TASK (PYTHON)
