@@ -1,4 +1,33 @@
 
+/* L-TASK (NodeJS)
+
+Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc"; 
+*/
+
+// Masalani yechimi:
+// node train.js
+
+
+function reverseSentence(str) {
+    const sozlar = str.split(" ");
+    let natija = [];
+
+    for (let i = 0; i < sozlar.length; i++) {
+        let teskari = sozlar[i].split("").reverse().join("");
+        natija.push(teskari);
+    }
+
+    return natija.join(" ");
+}
+
+console.log(reverseSentence("we like coding!"));
+
+
+
+
+
+
 /*
 J-TASK (NodeJS)
 
@@ -10,33 +39,23 @@ MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
 // Masalani yechimi:
 // node train.js
 
-function majorityElement(arr) {
-    let max = arr[0];
-    let more = 0;
+// function majorityElement(arr) {
+//     let max = arr[0];
+//     let more = 0;
 
-    arr.forEach(element => {
-        let count = arr.filter(x => x === element).length;
+//     arr.forEach(element => {
+//         let count = arr.filter(x => x === element).length;
 
-        if (count > more) {
-            more = count;
-            max = element;
-        }
-    });
-    return max;
-}
+//         if (count > more) {
+//             more = count;
+//             max = element;
+//         }
+//     });
+//     return max;
+// }
 
-const result = majorityElement([1, 2, 3, 4, 5, 4, 3, 4]);
-console.log(result);
-
-
-
-
-
-
-
-
-
-
+// const result = majorityElement([1, 2, 3, 4, 5, 4, 3, 4]);
+// console.log(result);
 
 
 
