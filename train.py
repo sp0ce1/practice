@@ -1,20 +1,39 @@
 
-'''
-K-TASK (PYTHON)
 
-Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
-MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
+'''
+M-TASK (PYTHON)
+
+Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
+MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
 '''
 
 # Masalaga Yechim:
 
 
-def find_longest(data):
-    list = data.split()
-    return max(list, key=lambda x: len(x))
+def palindrom_check(text):
+    return text == text[::-1]
 
 
-print(find_longest("I come from Uzbekistan"))
+print(palindrom_check("dad"))
+print(palindrom_check("son"))
+
+
+# '''
+# K-TASK (PYTHON)
+
+# Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
+# MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
+# '''
+
+# Masalaga Yechim:
+
+
+# def find_longest(data):
+#     list = data.split()
+#     return max(list, key=lambda x: len(x))
+
+
+# print(find_longest("I come from Uzbekistan"))
 
 
 # I-TASK (PYTHON)
