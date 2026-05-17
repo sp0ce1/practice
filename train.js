@@ -1,27 +1,60 @@
 
+/* N-TASK (NodeJS)
+
+Shunday function yozing, u raqamlardan tashkil topgan array qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin.
+MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}]; 
+*/
+
+// Masalani yechimi:
+// node train.js
+
+function getSquareNumbers(data) {
+    return data.map(raqam => ({
+        number: raqam,
+        square: raqam * raqam
+    }));
+}
+
+const result = getSquareNumbers([1, 2, 3]);
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* L-TASK (NodeJS)
 
 Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
-MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc"; 
+MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
 */
 
 // Masalani yechimi:
 // node train.js
 
 
-function reverseSentence(str) {
-    const sozlar = str.split(" ");
-    let natija = [];
+// function reverseSentence(str) {
+//     const sozlar = str.split(" ");
+//     let natija = [];
 
-    for (let i = 0; i < sozlar.length; i++) {
-        let teskari = sozlar[i].split("").reverse().join("");
-        natija.push(teskari);
-    }
+//     for (let i = 0; i < sozlar.length; i++) {
+//         let teskari = sozlar[i].split("").reverse().join("");
+//         natija.push(teskari);
+//     }
 
-    return natija.join(" ");
-}
+//     return natija.join(" ");
+// }
 
-console.log(reverseSentence("we like coding!"));
+// console.log(reverseSentence("we like coding!"));
 
 
 
