@@ -1,21 +1,37 @@
 
-
 '''
-M-TASK (PYTHON)
+O-TASK (PYTHON)
 
-Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
-MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
+Shunday function yozing, u har xil valuelardan iborat array qabul qilsin va List ichidagi sonlar yigindisini hisoblab chiqqan javobni qaytarsin.
+MASALAN: calculate_summary([10, "10", {son: 10}, true, 35]) return 45
 '''
 
-# Masalaga Yechim:
+
+def calculate_summary(data):
+    total = [x for x in data if isinstance(x, int) and not isinstance(x, bool)]
+    return sum(total)
 
 
-def palindrom_check(text):
-    return text == text[::-1]
+result = calculate_summary([10, "10", {"son": 10}, True, 35])
+print(result)
 
 
-print(palindrom_check("dad"))
-print(palindrom_check("son"))
+# '''
+# M-TASK (PYTHON)
+
+# Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
+# MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
+# '''
+
+# # Masalaga Yechim:
+
+
+# def palindrom_check(text):
+#     return text == text[::-1]
+
+
+# print(palindrom_check("dad"))
+# print(palindrom_check("son"))
 
 
 # '''
